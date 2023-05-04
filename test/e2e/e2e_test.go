@@ -76,6 +76,7 @@ func handleFlags() {
 	config.CopyFlags(config.Flags, flag.CommandLine)
 	framework.RegisterCommonFlags(flag.CommandLine)
 	framework.RegisterClusterFlags(flag.CommandLine)
+	framework.RegisterNetworkFlags(flag.CommandLine)
 	flag.Parse()
 }
 
